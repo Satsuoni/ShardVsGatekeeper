@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Shard Vs Gatekeeper Primitive Chat Client</title>
+ <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+<script type="text/javascript" src="/_ah/channel/jsapi"></script>
+
+<link type="text/css" rel="stylesheet" href="css/style.css" />
+</head>
+<script language="javascript" src="js/core.js">
+
+</script>
+<script language="javascript">
+$(document).ready(function(){
+
+            negotiate();
+			refreshChatbox();
+            bindChat();
+            bindNick();
+	        bindTabs();
+ fillColors();
+ 
+  bindCede();
+   bindThreat();
+ setPingSession();
+});
+</script>
+<body>
+<div id="wrapper" class="basic">
+<div id="title" class="basic">
+<div id="minititle" style="width:75%; float:left" >The Session<br />
+ <form id="nickform" method="post" action="" >
+ <input name="newnick" type="text" id="newnick" size="63" />
+  <input name="submitnick" type="submit"  id="submitnk"  class ="basic" value="Change" />
+ </form></div>
+ <div id="offsite" style="width:25%; float:left" ><form id="cedeform" method="post" action="" >
+  <input name="cede" type="submit"  id="cede"  class ="basic" value="Cede Session" />
+ </form>
+ </div>
+ <div style="clear:both"></div>
+</div>
+<div id="descriptionbox"  class="basic"></div>
+<div id="actionbox"  class="basic"></div>
+<div style="clear:both"></div>
+<div id="sessionstats"  class="basic">
+<div id="playertype" class="stattype" style="width:10%"></div>
+<div id="playerkind" class="stattype" style="width:10%"></div>
+<div id="gscore" class="stattype" style="width:16%"></div>
+
+<div id="maintimer" class="stattyperight" style="width:15%">Time left: </div>
+<div id="shardpower" class="stattyperight" style="width:15%">Shardic power: </div>
+<div id="sscore" class="stattyperight" style="width:15%"></div>
+
+<div style="clear:both"></div>
+</div>
+<div id="disaster" class="basic">Disasters</div>
+<div id="chatboxwrap_session" class="basic">
+ <div id="chatbox" class="basic"> ... </div>
+ <form id="chattextform" method="post" action="" >
+ <input name="chatmessage" type="text" id="chatmsg" size="63" />
+  <input name="submitchat" type="submit"  id="submitmsg"  class ="basic" value="Send" />
+ </form>
+ <div id="colors" class="basic overcolor">
+ 
+ 
+ </div>
+</div>
+<div id="inventory">
+<ul class='tabs' >
+			<li><a href='#tab1'  class="basic">Resources</a></li>
+			<li><a href='#tab2' class="basic">Objects</a></li>
+			<li><a href='#tab3' class="basic">Offers</a></li>
+		</ul>
+		<div id='tab1' class="basic" style="padding-left:5px;">
+		  <h3>Section 1</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis placerat dolor id aliquet. Sed a orci in justo blandit commodo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
+	</div>
+		<div id='tab2' class="basic">
+			<h3>Section 2</h3>
+			<p>Aenean et est tortor. In pharetra pretium convallis. Mauris sollicitudin ligula non mi hendrerit varius. Fusce convallis hendrerit mauris, eu accumsan nisl aliquam eu.</p>
+		</div>
+		<div id='tab3' class="basic">
+			<h3>Section 3</h3>
+			<p>Suspendisse potenti. Morbi laoreet magna vitae est mollis ultricies. Mauris eget enim ac justo eleifend malesuada. Proin non consectetur est. Integer semper laoreet porta. Praesent facilisis leo nec libero tincidunt blandit.</p>
+		</div>
+</div>
+</div>
+</body>
+</html>

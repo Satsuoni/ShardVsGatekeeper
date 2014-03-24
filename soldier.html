@@ -1,0 +1,17 @@
+<div style="border:#000000 1px solid; width:100%; padding-bottom:10px;">
+<form action="post" method="#" style="width:100%">
+<input class="soldierid" type="hidden" value="{{soldierid}}">
+<div class="soldiertype"  style="border:#000000 1px solid; width:80%; float:left; text-align:center" >{{soldiertype}}</div>
+<div class="soldierexhaustion"  style="border:#000000 1px solid; width:19%; float:left; text-align:center" >{soldierexhaustion}}</div>
+<div class="soldierpower"  style="border:#000000 1px solid; width:100%; float:left; text-align:center" >{{soldierpower}}</div>
+{{%mode=gatekeeeper}}
+<div class="commitsoldier"  style=" width:49%; float:left; text-align:center" ><input class="basic commitsoldier" type="button" value="Commit" name="Commit" ></div>
+<div class="selectsoldier" style=" width:49%; float:right; text-align:center" ><input class="basic selectsoldier" type="button" value="Select" name="Select"></div> 
+{{%%}}
+{{%mode=shard}}
+<div class="selectsoldier" style=" width:99%; float:right; text-align:center" ><input class="basic selectsoldier" type="button" value="Select" name="Select"></div> 
+{{%%}}
+
+ <div style="clear:both"></div>
+ </form>
+</div>

@@ -1,0 +1,27 @@
+<div style="border:#000000 1px solid; width:100%; padding-bottom:10px;">
+<form action="post" method="#" style="width:100%">
+<input class="userid" type="hidden" value="{{userid}}">
+<div class="usernick"  style="border:#000000 1px solid; width:74%; float:left; text-align:center" >{{usernick}}</div>
+<div class="pm" style="border:#000000 1px solid; width:24%; float:right; text-align:center" >PM</div>
+{{%mode=normal}}
+<div class="usernick"  style=" width:99%; float:left; text-align:center" >Invite, with you as:</div>
+<div class="shardinvite"  style=" width:49%; float:left; text-align:center" ><input class="basic shardinvite" type="button" value="Shard" name="Shard" ></div>
+<div class="keeperinvite" style=" width:49%; float:right; text-align:center" ><input class="basic keeperinvite" type="button" value="Gatekeeper" name="Gatekeeper"></div> 
+{{%%}}
+{{%mode=invited}}
+<div class="uninvite" style="border:#000000 1px solid; width:99%; float:right; text-align:center" ><input class="basic uninvite" type="button" value="Rescind invitation" name="Uninvite"></div>
+{{%%}}
+{{%mode=invitee}}
+<div class="usernick"  style=" width:99%; float:left; text-align:center" >{{usernick}} has invited you to play, with him as {{astype}}</div>
+
+<div class="accept" style="border:#000000 1px solid; width:99%; float:right; text-align:center" ><input class="basic accept" type="button" value="Accept invitation" name="Accept"></div>
+{{%%}}
+{{%mode=both}}
+<div class="usernick"  style=" width:99%; float:left; text-align:center" >{{usernick}} has invited you to play, with him as {{astype}}</div>
+
+<div class="accept" style="border:#000000 1px solid; width:99%; float:right; text-align:center" ><input class="basic accept" type="button" value="Accept invitation" name="Accept"></div>
+<div class="uninvite" style="border:#000000 1px solid; width:99%; float:right; text-align:center" ><input class="basic uninvite" type="button" value="Rescind invitation" name="Uninvite"></div>
+{{%%}}
+ <div style="clear:both"></div>
+ </form>
+</div>

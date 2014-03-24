@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Shard Vs Gatekeeper Primitive Chat Client</title>
+ <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+<script type="text/javascript" src="/_ah/channel/jsapi"></script>
+
+<link type="text/css" rel="stylesheet" href="css/style.css" />
+</head>
+<script language="javascript" src="js/core.js">
+
+</script>
+<script language="javascript">
+$(document).ready(function(){
+
+            negotiate();
+			refreshChatbox();
+            bindChat();
+            bindNick();
+ fillColors();
+  bindUsers();
+  
+});
+</script>
+<body>
+<div id="wrapper" class="basic">
+<div id="title" class="basic">The primitive chat client<br />
+ <form id="nickform" method="post" action="" >
+ <input name="newnick" type="text" id="newnick" size="63" />
+  <input name="submitnick" type="submit"  id="submitnk"  class ="basic" value="Change" />
+ </form>
+</div>
+<div id="sidebar" class="basic">Users</div>
+<div id="chatboxwrap" class="basic">
+ <div id="chatbox" class="basic"> ... </div>
+ <form id="chattextform" method="post" action="" >
+ <input name="chatmessage" type="text" id="chatmsg" size="63" />
+  <input name="submitchat" type="submit"  id="submitmsg"  class ="basic" value="Send" />
+ </form>
+ <div id="colors" class="basic overcolor">
+ 
+ 
+ </div>
+</div>
+
+</div>
+</body>
+</html>
